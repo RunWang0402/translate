@@ -11,13 +11,10 @@ warnings.filterwarnings("ignore", message="cmap value too big/small")
 import base64
 
 
-os.environ['OPENAI_API_KEY'] = APIKEY
-
 #set up environment, source: https://www.youtube.com/watch?v=nAmC7SoVLd8
 def set_API(user_API):
     os.environ['OPENAI_API_KEY'] = user_API
-
-llm = OpenAI(temperature = 0,max_tokens=3000)
+    llm = OpenAI(temperature = 0,max_tokens=3000)
 
 #extract text from pdf, split text, source: https://www.youtube.com/watch?v=O5C0wfsen98
 def extract_pdf(raw_docs):
