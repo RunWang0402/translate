@@ -1,1 +1,1 @@
-# translate
+# Translate to Chinese
