@@ -4,10 +4,9 @@ from PyPDF2 import PdfReader
 
 
 User_API = st.text_input (label = "API KEY")
-if User_API is not None:
+if User_API is not "":
     translator.set_API(User_API)
 
-file_name = ""
 
 uploaded_file = st.file_uploader(label= "To Translate", accept_multiple_files=False, type='pdf')
 
